@@ -43,10 +43,7 @@ div{
         
         }
         #foto{
-            width: 400px;
-            height: 400px;
-            position: relative;
-            left: 1900px;
-            bottom: 100px;
+           
+            float: right;
         }
     
