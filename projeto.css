@@ -1,63 +1,63 @@
-#makitatext{
-   text-align: center;
+#makitatext {
+    text-align: center;
 }
-#paragrafo{
+
+#paragrafo {
     font-family: Arial, Helvetica, sans-serif;
     font-size: larger;
-    
+
 }
-body{
+
+body {
     background-color: rgb(91, 149, 219);
 }
-div{
+
+div {
 
 
     padding: 10px;
     margin: 10px;
-    }
-    
-    
-    .navbar a {
-        float: left;
-        display: block;
-        color: rgb(255, 255, 255);
-        text-align:center;
-        padding: 14px 116px;
-        text-decoration: none;
-        }
-        
-        .navbar a:hover {
-        background-color: rgb(0, 0, 0);
-        
-       
-        
-        
-        
-        }
-    
-        .navbar{
-    
-    
-            overflow: hidden;
-            background-color:blue;
-            text-align: center;
-        
-        }
-        #foto{
-           position: relative;
-            float: right;
-            bottom: 400px;
-        }
-    #para{
-        font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.navbar a {
+    float: left;
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 116px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: blue;
+    text-align: center;
+
+}
+
+#foto {
+    position: fixed;
+    float: left;
+    width: 360px;
+    bottom: 400px;
+}
+
+#para {
+    font-family: Arial, Helvetica, sans-serif;
     font-size: larger;
     width: 1900px;
-    }
-    fieldset{
-        width: 200px;
-        height: 200px;
-        align-items: center;
-        position: relative;
-        margin:auto ;
-       top: 10vh;
-    }
+}
+
+fieldset {
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    position: relative;
+    margin: auto;
+    top: 10vh;
+}
