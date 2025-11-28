@@ -2,15 +2,30 @@
 <html lang="en">
 
 <head>
+    <link rel="shortcut icon" href="img/makita.png" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
-    <link rel="stylesheet" href="formu.css">
+    <link rel="stylesheet" href="./projeto.css">
 </head>
 
 <body>
-    <div>
+   
+     <footer>
+        <div>
+            <nav>
+            <div class="navbar">
+            <a href="index.html">inicio</a>
+            <a href="mais.html">mais sobre</a>
+            <a href="comprar.html">aonde comprar</a>
+            <a href="formulario.html">fale conosco</a>
+            </div>
+            <div class="content"></div>
+            </nav>
+        </footer>
+    <div> 
         <form action="">
+            
             <fieldset>
                
                 <legend>Fale conosco</legend>
@@ -37,69 +52,13 @@
          
                 <label for="mensagem">mensagem</label>
                 <textarea name="mensagem" id="mensagem"cols="82" rows="20"></textarea>
-         
+         <button id="button" type="reset">Enviar</button>
             </fieldset>
-            <button type="submit">Enviar</button>
+           
         </form>
     </div>
-    <script>
-        
-        function validaform() {
-            const email = document.getElementById('email');
-            let emailText=email.value.trim()
-            let valido = false       
-
-            if(emailText.incluides("@")) {
-                    valido = true
-            }else{
-                valido = false
-            }
     
-      
-       let partesEmail =emailText.split("@")
-       if(partesEmail[0].length>=7 && partesEmail[0].length <=127) {
-       valido = true
-       }else{
-        valido = false
-       }
-
-       const nome = document.getElementById("nome")
-       let nomeText = nome.value.trim()
-        if (nome.length >= 3){
-
-            console.log("nome atende ao tamanho minimo")
-            valido = true
-        }
-       else{
-            valido = false
-        }
-
-        const textarea = document.getElementById("mensagem")
-        let textTexto = textarea.value.trim()
-        if(textTexto === ""){
-            valido = true
-        }else{
-            valido = false
-        }
-         
-        if(valido){
-            alert("recebemos sua mensagem, em breve entramos em contato")
-        }else{
-            alert("temos um erro no formulario, corrija para seguir!")
-        }
-
-    }
-
-       document.addEventListener("submit",function(e){
-                e.preventDefault()
-                validaform()
-        }
-       )
-    
-       
-       
-
-    </script>
+   <script src="/formulario.js"></script>
 </body>
 
 </html>
