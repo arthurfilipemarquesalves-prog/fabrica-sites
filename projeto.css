@@ -41,8 +41,8 @@ div {
 }
 
 #foto {
-    position: fixed;
-    float: right;
+    position: absolute;
+    right: 0;
     width: 360px;
     bottom: 400px;
 }
